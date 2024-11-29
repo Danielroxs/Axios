@@ -182,21 +182,21 @@ async function main() {
 
     //===================Timeout=====================//
 
-    const axiosInstance = axios.create({
-        baseURL: "https://jsonplaceholder.typicode.com",
-        timeout: 1000
-    })
-
-    const resPosts = await axiosInstance.get('https://jsonplaceholder.typicode.com/posts/1', {
-        timeout: 1000
-    })
-    console.log(resPosts);
-
-    const resUsers = await axiosInstance.get('https://jsonplaceholder.typicode.com/users/1')
-    console.log(resUsers);
-
-    const resComment = await axiosInstance.get('https://jsonplaceholder.typicode.com/comments/1')
-    console.log(resComment);
+    /*  const axiosInstance = axios.create({
+         baseURL: "https://jsonplaceholder.typicode.com",
+         timeout: 1000
+     })
+ 
+     const resPosts = await axiosInstance.get('https://jsonplaceholder.typicode.com/posts/1', {
+         timeout: 1000
+     })
+     console.log(resPosts);
+ 
+     const resUsers = await axiosInstance.get('https://jsonplaceholder.typicode.com/users/1')
+     console.log(resUsers);
+ 
+     const resComment = await axiosInstance.get('https://jsonplaceholder.typicode.com/comments/1')
+     console.log(resComment); */
 
 }
 
